@@ -33,6 +33,6 @@ class StateController {
             
             stateArrayToReturn.append(state)
         }
-        return []
+        return stateArrayToReturn
     }
 }
