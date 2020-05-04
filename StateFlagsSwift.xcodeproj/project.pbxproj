@@ -12,6 +12,9 @@
 		7871D460246077A900C9D502 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7871D45E246077A900C9D502 /* Main.storyboard */; };
 		7871D462246077AA00C9D502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7871D461246077AA00C9D502 /* Assets.xcassets */; };
 		7871D465246077AA00C9D502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7871D463246077AA00C9D502 /* LaunchScreen.storyboard */; };
+		7871D4782460798400C9D502 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7871D4772460798400C9D502 /* State.swift */; };
+		7871D47D246080C500C9D502 /* StateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7871D47C246080C500C9D502 /* StateHelper.swift */; };
+		7871D47F246081CD00C9D502 /* StateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7871D47E246081CD00C9D502 /* StateController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		7871D461246077AA00C9D502 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7871D464246077AA00C9D502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7871D466246077AA00C9D502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7871D4772460798400C9D502 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		7871D47C246080C500C9D502 /* StateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateHelper.swift; sourceTree = "<group>"; };
+		7871D47E246081CD00C9D502 /* StateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,7 @@
 		7871D46E246077D300C9D502 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7871D4772460798400C9D502 /* State.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -109,6 +116,7 @@
 		7871D471246077EB00C9D502 /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7871D47E246081CD00C9D502 /* StateController.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -116,6 +124,7 @@
 		7871D4732460787000C9D502 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				7871D47C246080C500C9D502 /* StateHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -192,7 +201,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7871D459246077A900C9D502 /* AppDelegate.swift in Sources */,
+				7871D47D246080C500C9D502 /* StateHelper.swift in Sources */,
 				7871D45B246077A900C9D502 /* SceneDelegate.swift in Sources */,
+				7871D47F246081CD00C9D502 /* StateController.swift in Sources */,
+				7871D4782460798400C9D502 /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +349,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = StateFlagsSwift/Info.plist;
+				INFOPLIST_FILE = StateFlagsSwift/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -354,7 +366,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = StateFlagsSwift/Info.plist;
+				INFOPLIST_FILE = StateFlagsSwift/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
